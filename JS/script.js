@@ -51,15 +51,18 @@ function generateName(){
 
     const last_name = ["Gats","Buchanan","Buchanan","Baker"," Wilson"," Wilson","Wolfsheim","Carraway"];
 
-    let randFirstN = first_name[Math.floor(Math.random() * first_name.length)];
-    let randLastN = last_name[Math.floor(Math.random() * last_name.length)];
+    // let randFirstN = first_name[Math.floor(Math.random() * first_name.length)];
+    // let randLastN = last_name[Math.floor(Math.random() * last_name.length)];
     // console.log(randFirstN, randLastN);
 
     // let guestName = randFirstN + ' ' + randLastN;
+    
     let nLen = first_name.length;
     let list  = "<ul>";
     for(let i = 0; i < nLen; i++){
-        list += "<li>"  + first_name[i] + ' ' + last_name[i] + "</li>";
+        let randFirstN = first_name[Math.floor(Math.random() * first_name.length)];
+        let randLastN = last_name[Math.floor(Math.random() * last_name.length)];
+        list += "<li>"  + randFirstN + ' ' + randLastN + "</li>";
     }
     list += "</ul>";
 
