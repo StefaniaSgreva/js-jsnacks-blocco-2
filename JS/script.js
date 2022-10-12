@@ -44,6 +44,7 @@ btn.addEventListener('click', checkNumber);
 //**Snack2**
 
 const guest = document.getElementById('clickMe');
+// const guestList = [];
 
 function generateName(){
     const first_name = ["Jay","Daisy","Tom","Jordan","Myrtle","George","Meyer","Nick"];
@@ -52,12 +53,25 @@ function generateName(){
 
     let randFirstN = first_name[Math.floor(Math.random() * first_name.length)];
     let randLastN = last_name[Math.floor(Math.random() * last_name.length)];
-    console.log(randFirstN, randLastN);
+    // console.log(randFirstN, randLastN);
 
-    let guestName = randFirstN + ' ' + randLastN;
-      
-    document.getElementById("random_name").innerHTML = guestName;
+    // let guestName = randFirstN + ' ' + randLastN;
+    let nLen = first_name.length;
+    let list  = "<ul>";
+    for(let i = 0; i < nLen; i++){
+        list += "<li>"  + first_name[i] + ' ' + last_name[i] + "</li>";
+    }
+    list += "</ul>";
+
+    document.getElementById("random_name").innerHTML = list;
+
   }
 guest.addEventListener('click', generateName);
+
+
+
+//**Snack3**
+
+// const num [1,2,3,4,]
 
 
