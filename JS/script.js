@@ -40,3 +40,24 @@ const checkNumber = function(){
     }
 }
 btn.addEventListener('click', checkNumber);
+
+//**Snack2**
+
+const guest = document.getElementById('clickMe');
+
+function generateName(){
+    const first_name = ["Jay","Daisy","Tom","Jordan","Myrtle","George","Meyer","Nick"];
+
+    const last_name = ["Gats","Buchanan","Buchanan","Baker"," Wilson"," Wilson","Wolfsheim","Carraway"];
+
+    let randFirstN = first_name[Math.floor(Math.random() * first_name.length)];
+    let randLastN = last_name[Math.floor(Math.random() * last_name.length)];
+    console.log(randFirstN, randLastN);
+
+    let guestName = randFirstN + ' ' + randLastN;
+      
+    document.getElementById("random_name").innerHTML = guestName;
+  }
+guest.addEventListener('click', generateName);
+
+
