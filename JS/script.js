@@ -76,7 +76,7 @@ guest.addEventListener('click', generateName);
 //**Snack3**
 
 let btnGet = document.querySelector(".btn3");
-let output = document.querySelector("h3");
+let output = document.querySelector("#sum");
 
 
 btnGet.addEventListener("click", () => {

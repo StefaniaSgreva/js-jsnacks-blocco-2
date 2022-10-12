@@ -8,22 +8,25 @@
     <title>jsSnacks</title>
 </head>
 <body>
-    <!-- SNACK 1  -->
-    <div class="snack1">
-        <input id="userNumber" type="number" placeholder="enter a number">
-        <button class="btn1">Check</button>
-        <div id="result"></div>
+    <div class="wrapper">
+         <!-- SNACK 1  -->
+        <div class="snack1 m">
+            <input id="userNumber" type="number" placeholder="enter a number" class="no-outline">
+            <button class="btn1 btn">Even</button>
+            <h3 id="result" style="list-style: none;"></h3>
+         </div>
+        <!-- SNACK 2 -->
+        <div class="snack2 m">
+            <input id="clickMe" type="button" value="Generate Random Names"/>
+            <h2 id="random_name"></h2>
+        </div>
+        <!-- SNACK 3-->
+        <div class="snack3 m">
+            <button class="btn3 btn">Get Sum</button>
+            <h3 id="sum"></h3>
+        </div>
     </div>
-    <!-- SNACK 2 -->
-    <div class="snack2">
-        <input id="clickMe" type="button" value="Generate Random Name"/>
-        <h2 id="random_name"></h2>
-    </div>
-    <!-- SNACK 3-->
-    <div class="snack3">
-        <button class="btn3">Get Sum</button>
-        <h3></h3>
-    </div>
+   
 
     <script src="./JS/script.js"></script>
 </body>
